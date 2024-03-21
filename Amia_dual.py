@@ -63,7 +63,6 @@ def mul(x: dual_number, y: dual_number):
     z = dual_number(real, imag)
     return z
 def div(x: dual_number, y: dual_number):
-    k = y.con()
-    amia = dual_number(y.real * y.real, 0)
-    z = mul(x, mul(k,amia))
-    return z
+    self.real = self.real / ohter.real
+    self.imag = (self.real * other.imag - self.imag * other.real) / other.real
+    z = dual_number(real,imag)
