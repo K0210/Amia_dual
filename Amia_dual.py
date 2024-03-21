@@ -66,3 +66,4 @@ def div(x: dual_number, y: dual_number):
     self.real = self.real / ohter.real
     self.imag = (self.real * other.imag - self.imag * other.real) / other.real
     z = dual_number(real,imag)
+    return z
