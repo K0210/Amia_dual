@@ -32,14 +32,14 @@ class dual_number(object):
     self.real = self.real * other.real
     self.imag = self.real * other.imag + self.imag * other.real
   def __div__(self, other):
-    k = other.con()
-    amia = dual_number(other.real * other.real, 0)
-    z = self * mul(k,amia)
+    self.real = self.real / ohter.real
+    self.imag = (self.real * other.imag - self.imag * other.real) / other.real
+    z = dual_number(real,imag)
     return z
   def __idiv__(self, other):
-    k = other.con()
-    amia = dual_number(other.real * other.real, 0)
-    self = self * mul(k,amia)
+    self.real = self.real / ohter.real
+    self.imag = (self.real * other.imag - self.imag * other.real) / other.real
+    z = dual_number(real,imag)
   def toString(self):
     if self.imag >= 0:
         z = str(self.real) + '+' + str(self.imag) + 'ε'
